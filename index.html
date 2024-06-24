@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cartão de aniversariantes</title>
+    <link rel="stylesheet" href="style.cs">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            margin-top: 100px;
+            width: 100%;
+            background: #e7eaf0;
+           
+                   
+            
+        }
+        #cardsContainer{
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            width: 100%;
+    
+            background-color:hidden;
+           
+            justify-content: space-between;
+            
+            
+            
+        }
+        .card{
+            background: #cddaec;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba(0 , 0 , 0 ,0.3);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+            padding: 20px;
+            margin-top:10px;
+            transition:transform 0.3s;
+            height: 270px;
+        }
+        .card img{
+            border-radius: 50%;
+            margin: auto;
+            height: 80px;
+            max-width: 100px;
+            box-shadow: 1px 1px 3px 3px;
+            transition: 0.5s;
+        }
+        .card img:hover{
+            height: 120px;
+            max-width: 150px;
+
+        }
+        .card:hover{
+            height: 300px;
+        }
+        .card h2{
+            margin:5px 0 5px;
+
+        }
+        .card p{
+            color:#666060
+        }
+        img{
+            width: 500px;
+            height: 700px;
+            margin-right:300px ;
+        
+        }
+        .card section{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #004d90;
+            cursor: pointer;
+            
+        }
+        .hidden {
+            display:none;
+        }
+        .card:hover{
+            transform: scale(1.05);
+        }
+        .titulo{
+           background-color:#004d90;
+           border: 2px solid #dcdcdc;
+           text-align: center;
+          
+           border-radius: 12px;
+           box-shadow: 1px 1px 3px 2px;
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 2px;
+           padding-bottom: 2px;
+          
+           text-align:center ;
+           width: 800px;
+           align-items: center;
+           margin-left: 20%;
+           margin-top: 2%;
+        }
+        .container{
+            background-color:white;
+            height: 600px;
+            width: 80%;
+           
+            flex-wrap: wrap;
+            padding-left: 100px;
+            padding-right: 100px;
+            padding-bottom: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            box-shadow: 1px 1px 2px 3px #004d90;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .historia{
+            
+            padding-top:10px;
+            margin-top: 10px;
+            font-size: bold;
+            color: #666060;
+            padding-bottom: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <header>
+            <h1 class="titulo">Ficha de jogadores brasileiros no Real Madrid</h1>
+        </header>
+        <div id="cardsContainer">
+        
+        </div>
+    
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
+    
+    
+</body>
+<script src="script.js">
+    
+</script>
+</html>
